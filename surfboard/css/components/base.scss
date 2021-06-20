@@ -1,13 +1,18 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
   border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0;
   font-weight: none;
 }
@@ -33,8 +38,8 @@ img {
   display: block;
   // max-width: 100%;
 }
-html
-{
+
+html {
   // @include tablets
   // {
   //   font-size: $baseFontSize - 1px;
@@ -45,26 +50,25 @@ html
   // }
   font-size: 18px;
 }
-.body
-{
-margin: 0px;
-line-height: 1.42;
-font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-background:  #17191C;
--webkit-font-smoohing: antiliased;
--moz-osx-font-smoohing: grayscale;
-color:#666666;
+
+.body {
+  margin: 0px;
+  line-height: 1.42;
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  background: #17191C;
+  -webkit-font-smoohing: antiliased;
+  -moz-osx-font-smoohing: grayscale;
+  color: #666666;
 }
 
-.wrapper
-{
+.wrapper {
   position: relative;
   width: 100%;
   min-height: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.container{
+.container {
   margin: 0 auto;
   max-width: 0 auto;
   width: 85%;
