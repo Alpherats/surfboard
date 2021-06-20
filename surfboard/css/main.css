@@ -814,7 +814,7 @@ html {
 
 .section__map {
   background-image: url(../pictures/backgrounds/map.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   color: #FFFFFF;
