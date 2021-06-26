@@ -31,9 +31,11 @@ $phones: 480px;
 @import "components/benefit.scss";
 @import "components/headline.scss";
 
+@import "components/team.scss";
+
 @import "components/reveiws.scss";
 @import "components/interactive-avatar.scss";
-
+@import "components/assortment.scss";
 @import "components/delivery.scss";
 @import "components/form.scss";
 @import "components/radio.scss";
@@ -45,5 +47,5 @@ $phones: 480px;
 @import "components/_footer.scss";
 
 @import "components/socials-sprite.scss";
-
+@import "components/assortment__composition.scss";
 @import "components/_hamburger.scss";

@@ -15,19 +15,8 @@
     {
       padding: 0;
     }
-    &::after
-    {
-      @include phones
-      {
-        display: none;
-      }
-      content: url(../pictures/benefit/separator-1.png);
-      position:absolute;
-      top: rem(30px);
-      right: 0;
-      transform: translateX(50%);
 
-    }
+    
     &:first-child
     {
       padding-left: 0;
@@ -41,7 +30,25 @@
       padding-right: 0;
     }
   }
- 
+ &__item-active{
+   &::after
+  {
+    @include tablets{
+      display: none;
+    }
+    @include phones
+    {
+      display: none;
+    }
+    content: url(../pictures/benefit/separator-1.png);
+    position:absolute;
+    top: rem(30px);
+    right: 0;
+    transform: translateX(50%);
+
+  }
+
+ }
 }
 
 .benefits::after:last-child

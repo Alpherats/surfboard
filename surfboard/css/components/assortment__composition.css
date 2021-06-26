@@ -1,0 +1,9 @@
+.assortment-composition__list {
+  display: none;
+}
+
+.assortment-composition__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

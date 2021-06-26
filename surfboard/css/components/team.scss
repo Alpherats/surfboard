@@ -1,0 +1,60 @@
+.team__list
+{
+  display: flex;
+  justify-content: center;
+}
+
+.team__item
+{
+  margin-right: rem(20px);
+  max-width: 222px;
+  
+  &:last-child
+  {
+    margin-right: 0;
+  }
+}
+
+.team__img-wrap
+{
+  margin-bottom: rem(20px);
+}
+
+.team__name
+{
+
+  padding: 0% 0% 0% 18%;
+  &::after
+  {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: #292929;
+    border-top-width: 0;
+    transform: rotate(180deg);
+    margin: 1%;
+    }
+}
+
+// .team__name:active + .accordion__wrapper
+// {
+//   max-height: 100vh;
+// }
+
+.accordion__wrapper
+{
+  max-height: 0;
+  transition: 0.2s;
+  overflow: hidden;
+  top: 100%;
+}
+
+.accordion__title
+{
+  text-align: center;
+}
+
+.accordion__desc
+{
+  text-align: center;
+}
