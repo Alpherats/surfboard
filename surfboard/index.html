@@ -284,7 +284,7 @@
         <section class="section team__section">
           <div class="container">
          <h2 class="section__title">команда</h2>
-         <ul class="team__list team " id="team__list">
+         <ul class="team__list--desktop team " id="team__list">
           <li class="team__item">
             <div class="team__img-wrap">
               <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
@@ -308,7 +308,8 @@
                 <div class="accordion__desc">Отвечает за материалы и разработку досок</div>
               </div>
             </div>
-          </li>          <li class="team__item">
+          </li>         
+           <li class="team__item">
             <div class="team__img-wrap">
               <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
             </div>
@@ -333,6 +334,56 @@
             </div>
           </li>
          </ul>
+         <ul class="team__list--mobile team" >
+          <li class="team__item">
+            <div class="team__accordion">
+              <a href="#" class=" team__name accordion__button">Борис Федорович</a>
+              <div class="team__img-wrap">
+                <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
+              </div>
+              <div class="accordion__wrapper">
+                <h4 class="accordion__title">Главный технолог</h4>
+                <div class="accordion__desc">Отвечает за материалы и разработку досок</div>
+              </div>
+            </div>
+          </li>  
+          <li class="team__item">
+            <div class="team__accordion">
+              <a href="#" class=" team__name accordion__button">Борис Федорович</a>
+              <div class="team__img-wrap">
+                <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
+              </div>
+              <div class="accordion__wrapper">
+                <h4 class="accordion__title">Главный технолог</h4>
+                <div class="accordion__desc">Отвечает за материалы и разработку досок</div>
+              </div>
+            </div>
+          </li> 
+          <li class="team__item">
+            <div class="team__accordion">
+              <a href="#" class=" team__name accordion__button">Борис Федорович</a>
+              <div class="team__img-wrap">
+                <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
+              </div>
+              <div class="accordion__wrapper">
+                <h4 class="accordion__title">Главный технолог</h4>
+                <div class="accordion__desc">Отвечает за материалы и разработку досок</div>
+              </div>
+            </div>
+          </li> 
+          <li class="team__item">
+            <div class="team__accordion">
+              <a href="#" class=" team__name accordion__button">Борис Федорович</a>
+              <div class="team__img-wrap">
+                <img src="./pictures/team/Boris.png" alt="Boris" class="team__img">
+              </div>
+              <div class="accordion__wrapper">
+                <h4 class="accordion__title">Главный технолог</h4>
+                <div class="accordion__desc">Отвечает за материалы и разработку досок</div>
+              </div>
+            </div>
+          </li>   
+         </ul>
           </div>
         </section>
         <section class="section">
@@ -340,6 +391,8 @@
             <h2 class="section__title">отзывы</h2>
             <div class="reviews">
               <div class="reviews__display">
+                <ul class="reviews__list">
+                  <li class="reviews__item active" data-linked-with="one">
                 <div class="reviews__display-inner">
                   <div class="reviews__avatar">
                     <img src="./pictures/review/olga.png" alt="Olga main" class="reviews__avatar-img">
@@ -354,24 +407,88 @@
                     <div class="reveiws__author">Ольга Макарова</div>
                   </article>
                 </div>
+                  </li>
+                  <li class="reviews__item" data-linked-with="two">
+                    <div class="reviews__display-inner">
+                      <div class="reviews__avatar">
+                        <img src="./pictures/review/mark.png" alt="Mark main" class="reviews__avatar-img">
+                      </div>
+                      <article class="reviews__content">
+                        <div class="reviews__title">Нереальная скорость</div>
+                        <div class="reviews__text">
+                          <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                            Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                            </p>
+                        </div>
+                        <div class="reveiws__author">Марк Брюлов</div>
+                      </article>
+                    </div>
+                    </li>
+                    <li class="reviews__item" data-linked-with="three">
+                        <div class="reviews__display-inner">
+                          <div class="reviews__avatar">
+                            <img src="./pictures/review/vasya.jpg" alt="Vasya main" class="reviews__avatar-img">
+                          </div>
+                          <article class="reviews__content">
+                            <div class="reviews__title">Устойчивость и безопасность</div>
+                            <div class="reviews__text">
+                              <p> Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!</p>
+                            </div>
+                            <div class="reveiws__author">Василий Поперечный
+                            </div>
+                          </article>
+                        </div>
+                    </li>
+                </ul>
               </div>
               <ul class="reviews__switcher">
-                <li class="reviews__switcher-item interactive-avatar interactive-avatar_active">
-                  <a href="" class="interactive-avatar__link">
+                <li class="reviews__switcher-item interactive-avatar active">
+                  <a href="" class="interactive-avatar__link" data-open="one">
                     <img src="./pictures/review/olga.png" alt="Olga" class="interactive-avatar__img">
                   </a>
                 </li>
                 <li class="reviews__switcher-item interactive-avatar">
-                  <a href="" class="interactive-avatar__link">
-                    <img src="./pictures/review/olga.png" alt="Olga" class="interactive-avatar__img">
+                  <a href="" class="interactive-avatar__link" data-open="two">
+                    <img src="./pictures/review/mark.png" alt="Mark" class="interactive-avatar__img">
                   </a>
                 </li>
                 <li class="reviews__switcher-item interactive-avatar">
-                  <a href="" class="interactive-avatar__link">
-                    <img src="./pictures/review/olga.png" alt="Olga" class="interactive-avatar__img">
+                  <a href="" class="interactive-avatar__link" data-open="three">
+                    <img src="./pictures/review/vasya.jpg" alt="Vasya" class="interactive-avatar__img">
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section video">
+          <div class="container video__container">
+            <h2 class="section__title">как мы работаем</h2>
+            <div class="video__wrapper">
+              <div class="video__player">
+                <video src="#" id="player" class="video__window" poster="./pictures/poster.png"> </video>
+                <button class="video__player-img">
+                  <img src="./pictures/video-btn.png" alt="SurfBoard" class="video__btn-img">
+                </button>
+              </div>
+              <div class="video__toolbar">
+                <div class="duration video__toolbar-duration ">
+                  <div class="duration__btn-wrap">
+                    <button class="duration__img play"></button>
+                  </div>
+                  <div class="duration__length-wrap">
+                    <input type="range" class="duration__length" id="durationLevel">
+                  </div>
+                </div>
+                <div class="sound">
+                  <button class="sound__btn" id="mic">
+                    <img src="./pictures/volume1.png" alt="volume" class="sound__mic">
+                  </button>
+                  <div class="sound__volume">
+                    <input type="range" class=" duration__length sound__length" id="micLevel">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -538,6 +655,7 @@
     </ul>
   </nav>
   <script src="./script/jquery.js"></script>
+  <script src="./script/slideshow.js"></script>
 <script src="./script/menu-accordion.js" ></script>
 <script src="script/slider.js"></script>
 </body>

@@ -1,11 +1,27 @@
-.team__list
+.team__list--desktop
 {
+  @include tablets{
+    opacity: 0;
+  }
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-
+.team__img-wrap
+{ 
+  @include tablets{
+    display: none;
+  }
+}
 .team__item
 {
+  @include tablets{
+    
+    margin-bottom: rem(15px);
+    margin-right: 0;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   margin-right: rem(20px);
   max-width: 222px;
   
@@ -36,17 +52,14 @@
     }
 }
 
-// .team__name:active + .accordion__wrapper
-// {
-//   max-height: 100vh;
-// }
-
 .accordion__wrapper
 {
   max-height: 0;
   transition: 0.2s;
   overflow: hidden;
   top: 100%;
+
+  
 }
 
 .accordion__title
@@ -57,4 +70,20 @@
 .accordion__desc
 {
   text-align: center;
+}
+
+
+
+
+
+
+.team__list--mobile{
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  @include tablets{
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+  }
 }

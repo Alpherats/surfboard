@@ -59,3 +59,24 @@
   display: flex;
   justify-content: center;
 }
+
+.reviews__list{
+  position: relative;
+  min-height: 280px;
+}
+.reviews__item.active{
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__item
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}

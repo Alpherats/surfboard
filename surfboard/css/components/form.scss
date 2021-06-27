@@ -72,6 +72,10 @@
   border: none;
   padding: rem(18px) rem(12px) rem(20px) rem(12px);
   border: rem(3px) solid transparent;
+  @include tablets{
+    padding: rem(9px) rem(12px) rem(9px) rem(12px);
+    border-radius:8px ;
+  }
   &:focus
   {
     border-color: #FEDB3F;
@@ -79,6 +83,9 @@
   }
   &--textarea
   {
+    @include tablets{
+      height: rem(90px);
+    }
     height: rem(160px);
     resize: none;
   }

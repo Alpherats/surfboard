@@ -1,5 +1,5 @@
-let list = document.getElementById('team__list');
-
+// let list = document.getElementById('team__list');
+let list = document.getElementsByClassName('team__list'); // почему не работает
 const buttons = document.querySelectorAll('.team__name');
 
 for (let i = 0; i < buttons.length; i++) {
@@ -27,7 +27,5 @@ for (let i = 0; i < buttons.length; i++) {
 
   });
 }
-
-
 
 

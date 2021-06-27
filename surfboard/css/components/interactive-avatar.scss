@@ -6,10 +6,7 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  &_active
-  {
-    border-color: #FEDB3F;
-  }
+
   &__link
   {
     position: absolute;
@@ -26,4 +23,10 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+
+.interactive-avatar.active
+{
+  border-color: #FEDB3F;
 }
