@@ -14,6 +14,7 @@
 .assortment__photo {
   flex-shrink: 0;
   width: 45%;
+
   @include tablets{
     margin-bottom: rem(40px);
     width: 44%;
@@ -22,7 +23,13 @@
     width: 55%;
   }
 }
-
+.assortment__pic
+{
+  background-image: url(../pictures/assortment/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
 .assortment__content {
   flex-shrink: 0;
   width: 43%;
@@ -115,5 +122,14 @@
   }
   &--right{
     right: -4%;
+  }
+}
+
+.assortment__slider
+{
+  .bx-wrapper{
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
   }
 }

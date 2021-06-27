@@ -2,6 +2,7 @@ let video;
 let durationControl;
 let soundControl;
 let intervalId;
+let soundLevel;
 
 ///кнопки
 const playBtn = document.querySelector('video__player-img');
@@ -31,7 +32,11 @@ video.addEventListener('loadeddata', function () {
   soundControl.value=soundControl.max;
   soundControl.addEventListener('input', changeSoundVolume);
 })
-video.addEventListener('click', playStop);
+video.addEventListener('ended', function(){
+  playBtn.classList.toggle('video__player-img--active')
+  video.currentTime=0;
+  playerPlayBtn.classList.remove('active');
+});
 
 
 function playStop() {
@@ -64,10 +69,14 @@ function updateTime(){
 
 function soundOff(){
   if(video.volume==0){
-    video.volume=1;
+    video.volume=soundLevel;
+    soundControl.value = soundLevel*10
     soundBtn.classList('active');
   }else{
+    soundLevel=video.volume;
     video.volume=0;
+    soundControl.value = 0
+    soundBtn.classList.add('active');
   }
 }
 

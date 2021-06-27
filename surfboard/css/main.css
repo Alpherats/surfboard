@@ -784,6 +784,13 @@ html {
   }
 }
 
+.assortment__pic {
+  background-image: url(../pictures/assortment/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .assortment__content {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -899,6 +906,13 @@ html {
 }
 .assortment__control--right {
   right: -4%;
+}
+
+.assortment__slider .bx-wrapper {
+  border: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .delivery__section {
@@ -1277,7 +1291,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 8px;
-  padding: 10px 12px;
+  padding: 10px 6px;
 }
 .assortment-composition-item:last-child {
   margin-bottom: 0;
