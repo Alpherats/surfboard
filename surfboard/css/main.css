@@ -539,12 +539,6 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .team__img-wrap {
-    display: none;
-  }
-}
-
 .team__item {
   margin-right: 1.1111111111rem;
   max-width: 222px;
@@ -578,6 +572,10 @@ html {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin: 1%;
+}
+
+.accordion__button.active + .accordion__wrapper {
+  max-height: 100vh;
 }
 
 .accordion__wrapper {

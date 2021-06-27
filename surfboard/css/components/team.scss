@@ -6,12 +6,7 @@
   display: flex;
   justify-content: space-between;
 }
-.team__img-wrap
-{ 
-  @include tablets{
-    display: none;
-  }
-}
+
 .team__item
 {
   @include tablets{
@@ -38,7 +33,6 @@
 
 .team__name
 {
-
   padding: 0% 0% 0% 18%;
   &::after
   {
@@ -51,7 +45,9 @@
     margin: 1%;
     }
 }
-
+.accordion__button.active + .accordion__wrapper{
+  max-height: 100vh;
+}
 .accordion__wrapper
 {
   max-height: 0;
