@@ -1,0 +1,40 @@
+.products
+{
+  position: relative;
+  color: #fff;
+  background-image: url(../pictures/backgrounds/products-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-menu{
+    // position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    &__item{
+      display: flex;
+    }
+    &__title{
+      position: relative;
+      width: 100px;
+    }
+    &__content{
+      background-color: rgba(51, 53, 55, 0.9);
+      width: 0;
+      position: relative;
+      overflow: hidden;
+      transition: width  0.7s;
+    }
+    &__container{
+      padding: 40px 73px 45px 26px;
+    }
+    &__close{
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      border: none;
+      background: transparent;
+    }
+  }
+}

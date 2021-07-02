@@ -1,0 +1,11 @@
+.f-icon {
+  fill: #B3B3B3;
+  stroke: #B3B3B3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  fill: #292929;
+  stroke: #292929;
+}

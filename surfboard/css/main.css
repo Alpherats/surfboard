@@ -535,7 +535,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .team__list--desktop {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -561,7 +561,9 @@ html {
 }
 
 .team__name {
-  padding: 0% 0% 0% 18%;
+  color: #292929;
+  font-size: 1.1666666667rem;
+  font-weight: bold;
 }
 .team__name::after {
   content: "";
@@ -613,6 +615,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
 }
 
@@ -1253,6 +1256,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: #FFFFFF;
+  margin-top: 3.3333333333rem;
 }
 
 .assortment-composition__icon {
@@ -1555,4 +1559,95 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.icon {
+  fill: #B3B3B3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  fill: #292929;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancy-button {
+  display: none;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 35px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.input-error {
+  border-color: hotpink;
+}
+
+.products {
+  position: relative;
+  color: #fff;
+  background-image: url(../pictures/backgrounds/products-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.products-menu {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu__title {
+  position: relative;
+  width: 100px;
+}
+.products-menu__content {
+  background-color: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
 }

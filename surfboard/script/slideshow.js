@@ -1,6 +1,6 @@
 const findBlockByAlias = alias =>{
    return $(".reviews__item").filter((ndx, item)=>{
-    return  $("item").attr("data-linked-with")==alias;
+    return  $(item).attr("data-linked-with")==alias;
   })
 }
 

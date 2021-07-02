@@ -1,0 +1,5 @@
+.products {
+  position: relative;
+  color: #fff;
+  background: url(../pictures/backgrounds/Products-background.png) center center/cover no-repeat;
+}
