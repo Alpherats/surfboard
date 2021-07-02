@@ -1114,15 +1114,6 @@ html {
   border-color: #fff;
 }
 
-.section__map {
-  background-image: url(../pictures/backgrounds/map.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  color: #FFFFFF;
-  margin-bottom: 15px;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
