@@ -3,7 +3,9 @@
   top: 29%;
   right: 3%;
   z-index: $z-fixed-menu;
-
+  &--black{
+    color: black;
+  }
   &__item {
     margin-bottom: rem(5px);
 

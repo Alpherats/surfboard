@@ -7,6 +7,10 @@
 }
 
 .menu__list {
+  &-vertical{
+  flex-direction: column;
+ 
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,6 +33,9 @@
     color: $color-white;
     font-weight: bold;
     font-size: rem(18px);
+    @include tablets{
+      font-size: rem(36px);
+    }
   }
 }
 

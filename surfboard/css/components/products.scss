@@ -6,6 +6,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
   &-menu{
     // position: absolute;
     right: 0;
@@ -25,6 +26,10 @@
       position: relative;
       overflow: hidden;
       transition: width  0.7s;
+      &-text{
+        font-size: rem(16px);
+        color: #fff;
+      }
     }
     &__container{
       padding: 40px 73px 45px 26px;
@@ -35,6 +40,12 @@
       right: 25px;
       border: none;
       background: transparent;
+      &-icon{
+        width: 18px;
+        height: 18px;
+        display: block;
+        transition: 0.3s;
+      }
     }
   }
 }

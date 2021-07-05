@@ -87,6 +87,4 @@ function changeSoundVolume(){
   }else{
     soundBtn.classList.remove('active');
   }
-
-
 }

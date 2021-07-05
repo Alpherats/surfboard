@@ -27,3 +27,13 @@ const myCollection = new ymaps.GeoObjectCollection({},{
 }
 
 ymaps.ready(init);
+
+
+
+
+
+
+
+
+
+//////////
