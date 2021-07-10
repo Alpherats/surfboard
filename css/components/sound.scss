@@ -1,0 +1,44 @@
+.sound{
+  display: flex;
+  align-items: center;
+  position: relative;
+ 
+  &.active{
+    &::before{
+      opacity: 1;
+    }
+  }
+}
+
+.sound__btn
+{
+  border: 0;
+  background-color: transparent;
+  padding-right : 20px;
+  &::before{
+    content: '';
+    width: 29px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    left: 4px;
+    top: 50%; 
+    transform: translateY(-50%) rotate(42deg);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}
+
+.sound__mic
+{
+  cursor: pointer;
+  height: 16px;
+  width: 13px;
+}
+
+.sound__volume
+{
+  display: flex;
+  align-items: center;
+}

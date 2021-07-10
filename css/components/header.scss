@@ -1,0 +1,28 @@
+.header
+{
+  @include tablets
+  {
+    background-color: #1968B1; 
+    max-height: rem(91px);
+  }
+
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(25px);
+  margin-bottom: rem(100px);
+}
+.contacts__phone.header__contacts__phone
+{
+  @include tablets
+  {
+    display: none;
+  }
+}
+.logo-wrapp {
+  padding-right: rem(46px);
+}
+

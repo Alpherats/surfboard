@@ -1,0 +1,57 @@
+.button {
+  
+  font-size: rem(14px);
+  font-weight: 700;
+  cursor: pointer;
+  padding: rem(21px) rem(41px) rem(21px) rem(41px);
+  border-radius: rem(32px);
+  line-height: 1;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: none;
+
+}
+
+.button__yellow
+{
+  background-color: #FEDB3F;
+  color: #000000;
+  &:hover {
+    background: #FFD517;
+  }
+}
+
+.button__transperent
+{
+  background: transparent;
+  color: $color-grey ;
+  margin-left: rem(20px);
+  &:hover
+  {
+    color: #FEDB3F;
+  }
+}
+.hero__button
+{
+  @include tablets
+  {
+    width: rem(160px);
+    height: rem(60px);
+     
+  }
+
+}
+
+.greetings__button-wrap
+{
+  @include tablets
+  {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+  }
+   
+}

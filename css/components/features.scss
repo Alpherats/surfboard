@@ -1,0 +1,35 @@
+.greetings__features-section
+{
+  @include tablets
+  {
+    display: none;
+  }
+}
+.greetings__features {
+
+  display: flex;
+
+  .feature__item-wrap {
+    max-width: rem(90px);
+  }
+
+  .feature__item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+    font-size: rem(16px);
+    margin-top: rem(65px);
+    margin-right: rem(33px);
+    padding-bottom: rem(70px);
+  }
+
+  .feature__item:last-child {
+    margin-right: 0;
+  }
+
+  .feature__img {
+    margin-right: rem(10px);
+    width: rem(45px);
+  }
+}

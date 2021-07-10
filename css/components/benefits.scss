@@ -1,0 +1,57 @@
+.benefits
+{
+  color: $color-grey;
+  display: flex;
+  @include phones
+  {
+    flex-direction: column;
+  }
+  &__item
+  {
+    flex: 1; 
+    padding: 0 3%;
+    position: relative;
+    @include phones
+    {
+      padding: 0;
+    }
+
+    
+    &:first-child
+    {
+      padding-left: 0;
+      &::before
+      {
+        display: none;
+      }
+    }
+    &:last-child
+    {
+      padding-right: 0;
+    }
+  }
+ &__item-active{
+   &::after
+  {
+    @include tablets{
+      display: none;
+    }
+    @include phones
+    {
+      display: none;
+    }
+    content: url(../pictures/benefit/separator-1.png);
+    position:absolute;
+    top: rem(30px);
+    right: 0;
+    transform: translateX(50%);
+
+  }
+
+ }
+}
+
+.benefits::after:last-child
+{
+  display: none;
+}

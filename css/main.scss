@@ -1,0 +1,62 @@
+
+$color-white:#FFFFFF;
+$color-grey:#666666;
+$containerWidth: 940px;
+$containerHeight: 100vh;
+$baseFontSize: 18px;
+$z-fixed-menu: 100;
+
+// breakpoints 
+$tablets:768px;
+$phones: 480px;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
+@import url(../layout/normalize.css);
+
+
+@import "components/base.scss";
+@import "components/media.scss";
+@import "components/hero.scss";
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/_contacts.scss";
+@import "components/_menu.scss";
+@import "components/features.scss";
+@import "components/button.scss";
+@import"components/title.scss";
+
+@import "components/section.scss";
+@import "components/benefits.scss";
+@import "components/benefit.scss";
+@import "components/headline.scss";
+
+@import "components/team.scss";
+
+@import "components/reveiws.scss";
+@import "components/interactive-avatar.scss";
+@import "components/assortment.scss";
+@import "components/delivery.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+
+@import "components/fixed-menu.scss";
+
+@import "components/_map.scss";
+
+@import "components/_footer.scss";
+
+@import "components/socials-sprite.scss";
+@import "components/assortment__composition.scss";
+@import "components/_hamburger.scss";
+
+@import "components/video.scss";
+@import "components/duration.scss";
+@import "components/sound.scss";
+@import "components/icon.scss";
+@import "components/modal.scss";
+
+@import "components/products.scss";
+@import "components/player.scss";
+
+@import "components/fullscreen-menu.scss";

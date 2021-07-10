@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+
+
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    font-weight: bold;
+    font-size: rem(22px);
+    text-decoration: none;
+ 
+  }
+  &__tel
+  {
+   width: rem(13px);
+   height: rem(14px); 
+  }
+}
+
+.phone-number__icon {
+  margin-right: rem(10px);
+}
+
+.phone-number__text {
+  font-weight: bold;
+  font-size: rem(18px);
+  white-space: nowrap;
+  flex-shrink: 0;
+  &-footer
+  {
+    color: #292929;
+  }
+}

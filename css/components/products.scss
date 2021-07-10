@@ -1,0 +1,130 @@
+// .products
+// {
+//   position: relative;
+//   color: #fff;
+//   background-image: url(../pictures/backgrounds/products-background.png);
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   &-menu{
+//     // position: absolute;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     display: flex;
+//     &__item{
+//       display: flex;
+//     }
+//     &__title{
+//       position: relative;
+//       width: 100px;
+//     }
+//     &__content{
+//       background-color: rgba(51, 53, 55, 0.9);
+//       width: 0;
+//       position: relative;
+//       overflow: hidden;
+//       transition: width  0.7s;
+//       &-text{
+//         font-size: rem(16px);
+//         color: #fff;
+//       }
+//     }
+//     &__container{
+//       padding: 40px 73px 45px 26px;
+//     }
+//     &__close{
+//       position: absolute;
+//       top: 20px;
+//       right: 25px;
+//       border: none;
+//       background: transparent;
+//       &-icon{
+//         width: 18px;
+//         height: 18px;
+//         display: block;
+//         transition: 0.3s;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+.products {
+  position: relative;
+  color: #fff;
+  background-image: url(../pictures/backgrounds/products-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products__title {
+  font-size: rem(48px);
+  font-weight: bold;
+  position: absolute;
+  top: rem(100px);
+  left: rem(80px);
+}
+
+.products-menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; 
+   &__close{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    &-icon{
+      width: 18px;
+      height: 18px;
+      display: block;
+      transition: 0.3s;
+    }
+  }
+}
+
+.products-menu__item {
+  display: flex;
+  cursor: pointer;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 100px;
+}
+
+.products-menu__content {
+  background-color: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+
+  &-text {
+    font-size: rem(16px);
+    color: #fff;
+  }
+}
+
+.products-menu__item_active>.products-menu__content {
+  display: block;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+
+
+
