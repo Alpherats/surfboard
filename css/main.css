@@ -68,7 +68,7 @@ html {
 }
 
 .wrapp__content {
-  height: 100%;
+  height: 100vh;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -1105,9 +1105,6 @@ html {
   right: 3%;
   z-index: 100;
 }
-.fixed-menu--black {
-  color: black;
-}
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
@@ -1135,6 +1132,13 @@ html {
 
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+
+.fixed-menu--black .fixed-menu__list .fixed-menu__item .fixed-menu__link {
+  border-color: black;
+}
+.fixed-menu--black .fixed-menu__list .fixed-menu__item .fixed-menu__link::before {
+  background-color: black;
 }
 
 #map {
@@ -1600,6 +1604,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#volume-length {
+  width: 80px;
 }
 
 .icon {

@@ -1,18 +1,21 @@
 const sections = $("section");
-const display = $("wrapp__content");
+const display = $(".wrapp__content");
 
 let inScroll = false;
 
 sections.first().addClass("active");
 
 const performTransition = sectionEq =>{
+  console.log(sectionEq)
   if(inScroll==false){
     inScroll=true;
     const position = sectionEq * -100;
+    console.log(position)
 
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr("data-sidemenu-theme");
     const sideMenu=$(".fixed-menu");
+    console.log(menuTheme)
     if(menuTheme=="black"){
       sideMenu.addClass("fixed-menu--black");
     }else{
@@ -22,7 +25,9 @@ const performTransition = sectionEq =>{
       transform: `translateY(${position}%)`
     });
   
+    console.log(sections.eq(sectionEq))
     sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
     
 setTimeout(()=>{
   inScroll=false;
@@ -35,14 +40,16 @@ setTimeout(()=>{
 };
 
 const scrollViewport = direction=>{
-  const activeSection = sections.hasClass("active");
+  
+  const activeSection = $("section.active");
   const nextSection = $(activeSection).next();
   const prevSection = $(activeSection).prev();
+  
   if(direction=="next" && nextSection.length){
   performTransition(nextSection.index())
   }
   if(direction=="prev" && prevSection.length){
-    performTransition(prevtSection.index())
+    performTransition(prevSection.index())
   }
 }
 
@@ -55,7 +62,21 @@ $(window).on("wheel", e =>{
   if(deltaY<0){
     scrollViewport("prev");
   }
-})
+});
+
+$(window).on("scroll", e =>{
+  if (!inScroll) {
+    const deltaY=e.originalEvent.deltaY
+  if(deltaY>0)
+  {
+    scrollViewport("next");
+  }
+  if(deltaY<0){
+    scrollViewport("prev");
+  }
+  }
+  
+});
 
 
 $(window).on("keydown", e =>{

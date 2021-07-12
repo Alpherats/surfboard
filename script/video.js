@@ -4,6 +4,28 @@ let soundControl;
 let intervalId;
 let soundLevel;
 
+
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player("yt-player", {
+//     height: "405",
+//     width: "660",
+//     videoId: "3TdPBB9Z_cs",
+//     // videoId: "1wkPMUZ9vX4&ab",
+//     events: {
+//       // onReady: onPlayerReady,
+//       // onStateChange: onPlayerStateChange
+//     },
+//     playerVars: {
+//       controls: 0,
+//       disablekb: 0,
+//       showinfo: 0,
+//       rel: 0,
+//       autoplay: 0,
+//       modestbranding: 0
+//     }
+//   });
+// }
+
 ///кнопки
 const playBtn = document.querySelector('video__player-img');
 const soundBtn = document.querySelector('mic');
