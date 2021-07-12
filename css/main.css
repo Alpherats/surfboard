@@ -1134,7 +1134,7 @@ html {
   border-color: #fff;
 }
 
-.fixed-menu--black .fixed-menu__list .fixed-menu__item .fixed-menu__link {
+.fixed-menu--black .fixed-menu__list .fixed-menu__item--active .fixed-menu__link {
   border-color: black;
 }
 .fixed-menu--black .fixed-menu__list .fixed-menu__item .fixed-menu__link::before {
@@ -1485,7 +1485,7 @@ html {
   outline: 0;
   margin-left: -25%;
 }
-.duration__img.active {
+.duration__img.paused {
   border: 7px solid #626262;
   height: 20px;
   border-top: 0;
