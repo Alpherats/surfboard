@@ -21,8 +21,10 @@ let eventsInit = () => {
 }
 
 setInterval(()=>{
-  const durationSec=player.getDuration();
-  const completedSec = player.getCurrentTime();
+  let durationSec;
+  let completedSec 
+  // const durationSec=player.getDuration();
+  // const completedSec = player.getCurrentTime();
   const completedPercent = (completedSec/durationSec)*100;
 
   $(".duration__length").css({
@@ -110,5 +112,5 @@ function changeSoundVolume(){
   })
 }
 
-player.setVolume(changeSoundVolume);
-player.seekTo(newButtonPositionPercent);////????????????????????
+// player.setVolume(changeSoundVolume);
+// player.seekTo(newButtonPositionPercent);////????????????????????
