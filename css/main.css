@@ -62,7 +62,7 @@ html {
 
 .container {
   margin: 0 auto;
-  max-width: 0 auto;
+  max-width: 940px;
   width: 85%;
 }
 
